@@ -21,8 +21,10 @@ const Calculator = () => {
   };
 
   return (
-    <div className="w-full h-full flex justify-center items-center">
-      <div className="w-80 h-96 mt-20">
+    <div className=" h-screen flex justify-center items-center">
+      <div
+        className="shadow-2xl bg-gray-800 bg-opacity-60 rounded-2xl  border-2 border-gray-500"
+      >
         <Display expression={expression} />
         <Keyboard onButtonClick={handleButtonClick} />
       </div>
